@@ -22,89 +22,89 @@ $regexp-color: #6b60aa;
 $section-color: #99f;
 
 .hljs- {
-	&keyword {
-		color: $keyword-color;
-		font-style: italic;
-	}
+  &keyword {
+    color: $keyword-color;
+    font-style: italic;
+  }
 
-	&attribute {
-		color: $attribute-color;
-	}
+  &attribute {
+    color: $attribute-color;
+  }
 
-	&string {
-		color: $string-color;
-	}
+  &string {
+    color: $string-color;
+  }
 
-	&comment {
-		color: $comment-color;
-	}
+  &comment {
+    color: $comment-color;
+  }
 
-	&tag {
-		color: $tag-color;
-	}
+  &tag {
+    color: $tag-color;
+  }
 
-	&name, &built_in {
-		color: $name-color;
-		font-weight: bold;
-	}
+  &name, &built_in {
+    color: $name-color;
+    font-weight: bold;
+  }
 
-	&title {
-		color: $title-color;
-	}
+  &title {
+    color: $title-color;
+  }
 
-	&number {
-		color: $number-color;
-	}
+  &number {
+    color: $number-color;
+  }
 
-	&regexp {
-		color: $regexp-color;
-	}
+  &regexp {
+    color: $regexp-color;
+  }
 
-	&type, &class, &title {
-		color: $title-color;
-	}
+  &type, &class, &title {
+    color: $title-color;
+  }
 
-	&variable {
-		color: $variable-color;
-	}
+  &variable {
+    color: $variable-color;
+  }
 
-	&section {
-		color: $section-color;
-	}
+  &section {
+    color: $section-color;
+  }
 
-	&quote {
-		color: $faded;
-	}
+  &quote {
+    color: $faded;
+  }
 
-	&bullet {
-		color: $gray;
-	}
+  &bullet {
+    color: $gray;
+  }
 
-	&meta, &link, &symbol {
-		color: $orange;
-	}
+  &meta, &link, &symbol {
+    color: $orange;
+  }
 
-	&literal, &template-variable, &tag &attr, &addition, &deletion {
-		color: $primary-color;
-	}
+  &literal, &template-variable, &tag &attr, &addition, &deletion {
+    color: $primary-color;
+  }
 }
 
 code[lang="diff"] {
-	.hljs- {
-		&deletion {
-			background: rgba($red, 0.5) / 2;
-		}
+  .hljs- {
+    &deletion {
+      background: rgba($red, 0.5) / 2;
+    }
 
-		&addition {
-			background: rgba($green, 0.5) / 2;
-		}
-	}
+    &addition {
+      background: rgba($green, 0.5) / 2;
+    }
+  }
 }
 
 .xml {
-	.hljs- {
-		&tag {
-			color: $faded;
-		}
-	}
+  .hljs- {
+    &tag {
+      color: $faded;
+    }
+  }
 }
