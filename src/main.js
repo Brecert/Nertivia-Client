@@ -1,4 +1,4 @@
-import './styles/prism-shisutakia-theme.scss'
+import './styles/prism-henkasuru-theme.scss'
 
 import Vue from 'vue'
 import {router} from './router'
