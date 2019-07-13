@@ -95,8 +95,8 @@ futoji.addTransformer({
 
 		codeElement.textContent = formatted.code
 
+		// todo, use async and return element
 		Prism.highlightElement(codeElement)
-
 
 		return `<div class="codeblock">${codeElement.outerHTML}</div>`
 	}
