@@ -1,0 +1,67 @@
+$blue: #5cbffc;
+$pink: #f5a8b8;
+$fade: #999;
+$punc: #ccc;
+$green: #a8f5b8;
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable,
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: $fade;
+}
+
+.token.punctuation {
+	color: $punc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted,
+.token.boolean,
+.token.number,
+.token.function,
+.token.boolean,
+.token.number,
+.token.function,
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: $pink;
+}
+
+.token.function-name,
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin,
+.token.operator,
+.token.entity,
+.token.url {
+	color: $blue;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	color: $green;
+}
