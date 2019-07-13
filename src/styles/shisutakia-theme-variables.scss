@@ -1,13 +1,16 @@
 $orange: #ffa243;
-$pink: #e784a2;
+$pink: #f5a8b8;
 $blue: #5cbffc;
 $gray: #bdc1c7;
+$purple: #6b60aa;
+
+$light-blue: #99f;
 
 $faded: #7d8c93;
 $faded-yellow: #e8e2b7;
 $faded-blue: #85b5c7;
 
-$red: rgb(200, 50, 100);
+$red: rgb(200, 75, 100);
 $green: rgb(50, 200, 100);
 
 $primary-color: #fff;
@@ -20,23 +23,55 @@ $name-color: $pink;
 $title-color: $faded-blue;
 $number-color: $blue;
 $tag-color: $faded-yellow;
-$regexp-color: #6b60aa;
+$regexp-color: $purple;
 
-$section-color: #99f;
+$section-color: $light-blue;
 
 // prism
 $punctuation-color: $gray;
 
+// basic
 $function-color: $blue;
 $parameter-color: $primary-color;
 $params-color: currentColor;
 $template-string-color: $string-color;
 $interpolation-color: currentColor;
+$boolean-color: $primary-color;
+$builtin-color: $blue;
 
+$class-name-color: $primary-color;
+
+$property-macro-color: $orange;
+
+$url-color: $green;
+
+// css
+$css-color: $green;
+$css-id-color: $blue;
+$css-class-color: $blue;
+$css-attribute-color: $pink;
 $selector-color: $faded;
 $property-color: $attribute-color;
 
+// html
 $doctype-color: $orange;
 $html-tag-color: $pink;
 $attr-name-color: $primary-color;
 $attr-value-color: $string-color;
+
+// asciidoc
+$asciidoc-title-color: $light-blue;
+$important-color: $orange;
+$attributes-color: $orange;
+
+
+// autohotkey
+$autohotkey-color: currentColor;
+$autohotkey-variable-color: $pink;
+
+// init
+$ini-selector-color: $blue;
+
+// md
+$markdown-list-color: $blue;
+$markdown-title-color: $light-blue;

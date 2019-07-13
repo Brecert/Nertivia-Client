@@ -20,6 +20,10 @@ code[class*=' language-'] {
     	// font-weight: bold;
 		}
 
+		&.variable {
+			color: $variable-color;
+		}
+
 		&.operator {
 			color: $keyword-color;
 		}
@@ -32,9 +36,21 @@ code[class*=' language-'] {
 			color: $punctuation-color;
 		}
 
+		&.comment {
+			color: $comment-color;
+		}
+
+		&.boolean {
+			color: $boolean-color;
+		}
+
 		// programming languages
 		&.function {
 			color: $function-color;
+		}
+
+		&.builtin {
+			color: $builtin-color;
 		}
 
 		&.parameter {
@@ -53,6 +69,10 @@ code[class*=' language-'] {
 			color: $interpolation-color;
 		}
 
+		&.class-name {
+			color: $class-name-color;
+		}
+
 		// css
 		&.selector {
 			color: $selector-color;
@@ -60,6 +80,10 @@ code[class*=' language-'] {
 
 		&.property {
 			color: $property-color;
+		}
+
+		&.property.macro {
+			color: $property-macro-color;
 		}
 
 		// html
@@ -85,6 +109,110 @@ code[class*=' language-'] {
 
 		&.attr-value {
 			color: $attr-value-color;
+		}
+
+		// asciidoc
+		&.title {
+			color: $title-color;
+		}
+
+		&.important {
+			color: $important-color;
+		}
+
+		&.attributes {
+			color: $attributes-color;
+		}
+
+		// other
+		&.url {
+			color: $url-color;
+		}
+
+		&.italic {
+			font-style: italic;
+		}
+	}
+}
+
+code.language-asciidoc {
+	.token {
+		&.title, &.title > * {
+			color: $asciidoc-title-color !important;
+		}
+
+		&.attributes, &.attributes > * {
+			color: $attributes-color !important;
+		}
+	}
+}
+
+code.language-autohotkey {
+	color: $autohotkey-color;
+
+	.token {
+		&.variable {
+			color: $autohotkey-variable-color !important;
+		}
+	}
+}
+
+code.language-css {
+	.token {
+		&.id {
+			color: $css-id-color;
+		}
+
+		&.class {
+			color: $css-class-color;
+		}
+
+		&.attribute {
+			color: $css-attribute-color;
+		}
+	}
+}
+
+code.language-diff {
+	width: 100%;
+
+  .token {
+    &.deleted {
+      color: $red;
+      background: rgba($red, 0.5) * 0.3;
+    }
+
+    &.inserted {
+      color: $green;
+      background: rgba($green, 0.5) * 0.3;
+    }
+
+    &.coord {
+    	background: rgba($gray, 0.5) * 0.5;
+    }
+  }
+}
+
+code.language-ini {
+	.token {
+		&.selector {
+			color: $ini-selector-color;
+		}
+	}
+}
+
+code.language-md {
+	.token {
+		&.list {
+			color: $markdown-list-color;
+		}
+
+		&.blockquote {
+			color: gray;
+		}
+
+		&.title {
+			color: $markdown-title-color;
 		}
 	}
 }
