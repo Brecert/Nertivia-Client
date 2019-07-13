@@ -2,7 +2,7 @@ import Formatter from 'futoji'
 import twemoji from 'twemoji'
 import emojiParser from '@/utils/emojiParser';
 import config from "@/config.js";
-import hljs from 'highlight.js'
+import Prism from 'prismjs'
 import { escape as escapeHTML, unescape as unescapeHTML } from 'validator'
 
 const futoji = new Formatter();
@@ -85,18 +85,20 @@ futoji.addTransformer({
 	symbol: '```',
 	recursive: false,
 	transformer: text => {
-		let formatted = formatCode(text)
+		const formatted = formatCode(text)
 
-		let highlighted
-		if(formatted.lang.length === 0) {
-			return `<div class="codeblock"><code>${escapeHTML(formatted.code)}</code></div>`
-		} else if(hljs.listLanguages().includes(formatted.lang)) {
-			highlighted = hljs.highlight(formatted.lang, formatted.code, true)
-		} else {
-			highlighted = hljs.highlightAuto(formatted.code)
+		const codeElement = document.createElement('code')
+
+		if(formatted.lang.length !== 0) {
+			codeElement.classList.add(`language-${formatted.lang}`)
 		}
 
-		return `<div class="codeblock"><code lang="${escapeHTML(highlighted.language)}">${highlighted.value}</code></div>`
+		codeElement.textContent = formatted.code
+
+		Prism.highlightElement(codeElement)
+
+
+		return `<div class="codeblock">${codeElement.outerHTML}</div>`
 	}
 })
 
