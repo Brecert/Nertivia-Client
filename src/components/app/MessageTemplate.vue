@@ -369,7 +369,7 @@ export default {
 }
 </style>
 
-<style>
+<style lang="scss">
 .msg-link {
   color: rgb(50, 138, 253);
 }

@@ -1,0 +1,42 @@
+$orange: #ffa243;
+$pink: #e784a2;
+$blue: #5cbffc;
+$gray: #bdc1c7;
+
+$faded: #7d8c93;
+$faded-yellow: #e8e2b7;
+$faded-blue: #85b5c7;
+
+$red: rgb(200, 50, 100);
+$green: rgb(50, 200, 100);
+
+$primary-color: #fff;
+$attribute-color: #e86070 * 1.1;
+$variable-color: scale-color(#e4d6ff, $saturation: -90%);
+$string-color: $gray;
+$comment-color: $faded;
+$keyword-color: scale-color(#e784a2, $saturation: 100%); 
+$name-color: $pink;
+$title-color: $faded-blue;
+$number-color: $blue;
+$tag-color: $faded-yellow;
+$regexp-color: #6b60aa;
+
+$section-color: #99f;
+
+// prism
+$punctuation-color: $gray;
+
+$function-color: $blue;
+$parameter-color: $primary-color;
+$params-color: currentColor;
+$template-string-color: $string-color;
+$interpolation-color: currentColor;
+
+$selector-color: $faded;
+$property-color: $attribute-color;
+
+$doctype-color: $orange;
+$html-tag-color: $pink;
+$attr-name-color: $primary-color;
+$attr-value-color: $string-color;

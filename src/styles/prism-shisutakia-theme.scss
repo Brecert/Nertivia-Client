@@ -1,0 +1,90 @@
+@import "shisutakia-theme-variables";
+
+code[class^='language-'],
+code[class*=' language-'] {
+	color: $variable-color;
+
+	white-space: pre;
+
+	.token {
+		color: $primary-color;
+
+		// generic
+		&.string {
+			color: $string-color;
+		}
+
+		&.keyword {
+	    color: $keyword-color;
+    	font-style: italic;
+    	// font-weight: bold;
+		}
+
+		&.operator {
+			color: $keyword-color;
+		}
+
+		&.number {
+			color: $number-color;
+		}
+
+		&.punctuation {
+			color: $punctuation-color;
+		}
+
+		// programming languages
+		&.function {
+			color: $function-color;
+		}
+
+		&.parameter {
+			color: $parameter-color;
+		}
+
+		&.params {
+			color: $params-color;
+		}
+
+		&.template-string {
+			color: $template-string-color;
+		}
+
+		&.interpolation {
+			color: $interpolation-color;
+		}
+
+		// css
+		&.selector {
+			color: $selector-color;
+		}
+
+		&.property {
+			color: $property-color;
+		}
+
+		// html
+		&.doctype {
+			color: $doctype-color;
+		}
+
+		&.tag {
+			color: $html-tag-color;
+
+			& > .tag {
+				font-weight: 700;
+
+				.token {
+					font-weight: initial;
+				}
+			}
+		}
+
+		&.attr-name {
+			color: $attr-name-color;
+		}
+
+		&.attr-value {
+			color: $attr-value-color;
+		}
+	}
+}
