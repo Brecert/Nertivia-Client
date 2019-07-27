@@ -3,6 +3,7 @@ import emojiParser from '@/utils/emojiParser';
 import config from "@/config.js";
 
 import customEmoji from './markdown-it-plugins/customEmoji'
+import newTabLink from './markdown-it-plugins/newTabLink'
 
 import hljs from 'highlight.js'
 
@@ -24,15 +25,8 @@ const markdown = new MarkdownIt({
     return '<div class="codeblock"><code>' + markdown.utils.escapeHtml(str) + '</code></div>';
   }
 }).use(chatPlugin)
-	.use(customEmoji);
-
-function owo (text) {
-	const split = text.split('&');
-	if (!split || split.length <= 1) return `:${text}:`;
-	const url = split[split.length - 1].slice(4);
-	return `<img class="emoji" draggable="false" alt=":${split[0]}:" src="${config.domain + "/files/" + url}">`
-}
-
+	.use(customEmoji)
+	.use(newTabLink);
 
 export default (message) => {
 
