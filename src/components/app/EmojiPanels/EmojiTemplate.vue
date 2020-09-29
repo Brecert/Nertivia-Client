@@ -3,11 +3,13 @@
     <div
       v-if="!emoji.emojiID"
       class="emoji"
+      :title="shortcodes"
       :style="{ backgroundPosition: emoji.pos }"
     />
     <div
       v-else
       class="emoji custom"
+      :title="shortcodes"
       :style="{
         backgroundImage: `url(${customEmojiUrl + emoji.emojiID}.${
           emoji.gif ? 'gif' : 'png'
@@ -25,6 +27,11 @@ export default {
     return {
       customEmojiUrl: config.nertiviaCDN + "emojis/"
     };
+  },
+  computed: {
+    shortcodes() {
+      return this.emoji.shortcodes.join(', ')
+    }
   }
 };
 </script>
